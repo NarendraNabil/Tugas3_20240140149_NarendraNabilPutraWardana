@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <center>
+      <div class="container">
+        <div class="header">
+          <h3>Pendaftaran Peminatan</h3>
+        </div>
+        <form action="">
+            <!-- input nama -->
+          <label for="nama">Nama</label><br />
+          <input
+            type="text"
+            placeholder="Nama anda"
+            id="namaKucing"
+          /><br /><br />
+
+          <!-- input NIM -->
+          <label for="jenisKucing">NIM</label><br />
+          <input
+            type="text"
+            placeholder="NIM anda"
+            id="jenisKucing"
+          /><br /><br />
+
+          <!-- input angkatan -->
+          <label for="jenisKucing">Angkatan</label><br />
+          <select name="jenisKucing" id="jenisKucing">
+            <option value="">-- Pilih Angkatan --</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2023">2024</option>
+            <option value="2023">2025</option>
+          </select><br /><br />
+
+          <!-- input peminatan -->
+          <p>Peminatan pada bidang</p>
+          <input type="radio" name="warna" id="programming" value="Programming" />
+          <label for="programming">Programming</label> <br />
+
+          <input type="radio" name="warna" id="desain" value="Desain" />
+          <label for="desain">Desain</label><br />
+
+          <input type="radio" name="warna" id="jaringan" value="Jaringan" />
+          <label for="jaringan">Jaringan</label><br />
+
+          <input type="radio" name="warna" id="data" value="Data" />
+          <label for="data">Data</label><br />
+
+          <!-- input tanggal -->
+          <label for="tanggalLahir">Tanggal</label><br />
+          <input type="date" id="tanggalLahir" /><br /><br />
+
+          <!-- textarea alamat -->
+          <label for="deskripsi">Alamat</label><br />
+          <textarea
+            placeholder="Tulis alamatmu di sini"
+            name="deskripsi"
+            id="deskripsi"
+            cols="30"
+            rows="5"
+          ></textarea
+          ><br /><br />
+
+          <button type="submit" onclick="kirimData(event)">Submit</button>
+        </form>
+      </div>
+    </center>
+
+    <script src="script.js"></script>
+  </body>
+</html>
